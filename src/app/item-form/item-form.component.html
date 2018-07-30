@@ -1,0 +1,15 @@
+<!--<input type="text" class="form-control" -->
+       <!--placeholder="Type title" -->
+       <!--[(ngModel)] = "itemTitle">-->
+<input type="text" class="form-control"
+       placeholder="Type title"
+       #inputTitle >
+
+<!--<input type="text" class="form-control"-->
+       <!--placeholder="Type time"-->
+       <!--[(ngModel)] = "itemTime">-->
+<input type="text" class="form-control"
+       placeholder="Type time"
+       #inputTime>
+
+<button class="btn btn-success" (click)="addBtnClick(inputTitle)">Add</button>

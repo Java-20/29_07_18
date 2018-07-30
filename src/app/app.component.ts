@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  items: Item[] = [];
+
+  addItem(item:Item):void{
+    this.items.push(item);
+  }
+
+}
+type Item = {
+  title:string,
+  time:string
 }
